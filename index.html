@@ -27,6 +27,20 @@
       z-index: -1;
     }
     
+    .coming-soon {
+      width: 10em; /* 33% of the logo width */
+      height: 10em; /* 33% of the logo height */
+
+      object-fit: contain;
+    }
+    
+    .coming-soon-container {
+      position: absolute;
+      bottom: calc(30% * (50% - 15em)); /* 30% of the distance between the bottom and the logo */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
   </style>
 </head>
 <body>
@@ -34,5 +48,6 @@
     <img src="logo2.png" alt="Logo" class="logo">
   </div>
   <video src="video.mp4" autoplay muted loop></video>
+  <div class="coming-soon-container"> <img src="comingsoon.png" alt="Coming soon" class="coming-soon"> </div>
 </body>
 </html>
