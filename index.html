@@ -2,14 +2,12 @@
 <head>
   <style>
     
-    .logo {
+     .logo {
       width: 30em;
       height: 30em;
-      
       object-fit: contain;
     }
 
-    
     .logo-container {
       position: absolute;
       top: 50%;
@@ -17,16 +15,24 @@
       transform: translate(-50%, -50%);
     }
 
-    
     body {
-      background-image: url("video.mp4");
-      background-size: cover;
+      margin: 0;
+      overflow: hidden;
     }
+
+    video {
+      position: fixed;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+    
   </style>
 </head>
 <body>
   <div class="logo-container">
     <img src="logo2.png" alt="Logo" class="logo">
   </div>
+  <video src=“video.mp4” autoplay muted loop></video>
 </body>
 </html>
