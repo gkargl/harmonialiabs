@@ -1,51 +1,32 @@
 <html>
 <head>
   <style>
-      .logo {
-        width: 30em;
-        height: 30em;
+    
+    .logo {
+      width: 30em;
+      height: 30em;
+      
+      object-fit: contain;
+    }
 
-        object-fit: contain;
-      }
+    
+    .logo-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-
-      .logo-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-
-      body {
-        background-image: url("/video.mp4");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-
-
-      .coming-soon {
-        width: 10em; /* 33% of the logo width */
-        height: 10em; /* 33% of the logo height */
-
-        object-fit: contain;
-      }
-
-
-      .coming-soon-container {
-        position: absolute;
-        bottom: calc(30% * (50% - 15em)); /* 30% of the distance between the bottom and the logo */
-        left: 50%;
-        transform: translateX(-50%);
-      }
+    
+    body {
+      background-image: url("image.jpg");
+      background-size: cover;
+    }
   </style>
 </head>
 <body>
   <div class="logo-container">
-    <img src="logo2.png" alt="Logo" class="logo">
-  </div>
-  <div class=“coming-soon-container”> 
-    <img src=“/comingsoon.png” alt=“Coming soon” class=“coming-soon”> 
+    <img src="logo.png" alt="Logo" class="logo">
   </div>
 </body>
 </html>
